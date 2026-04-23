@@ -1,0 +1,158 @@
+/* ===========================
+   ObsidianCore – Dark Hacker Theme
+   Black background, green text
+   =========================== */
+
+/* ---------- Base ---------- */
+body {
+    background-color: #000 !important;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+}
+
+a, .btn-link {
+    color: #00ff00;
+    text-decoration: none;
+}
+a:hover {
+    color: #00cc00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* ---------- Cards / Dark containers ---------- */
+.bg-dark, .card, .modal-content, .list-group-item, .dropdown-menu {
+    background-color: #111 !important;
+    color: #00ff00 !important;
+}
+.border-success {
+    border-color: #00ff00 !important;
+}
+.text-success {
+    color: #00ff00 !important;
+}
+
+/* ---------- Form controls ---------- */
+input, textarea, select {
+    background-color: #000 !important;
+    color: #00ff00 !important;
+    border: 1px solid #00ff00 !important;
+}
+::placeholder {
+    color: #00ff00 !important;
+    opacity: 0.5;
+}
+.form-label, label {
+    color: #00ff00 !important;
+}
+/* Fix select dropdown arrow (white → green) */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300ff00' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+/* Remove autofill white background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #00ff00 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ---------- Buttons ---------- */
+.btn-outline-success {
+    border-color: #00ff00;
+    color: #00ff00;
+}
+.btn-outline-success:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+.btn-success {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    color: #000;
+}
+.btn-success:hover {
+    background-color: #00cc00;
+    border-color: #00cc00;
+}
+.btn-outline-danger {
+    border-color: #ff4444;
+    color: #ff4444;
+}
+.btn-outline-danger:hover {
+    background-color: #ff4444;
+    color: #000;
+}
+.btn {
+    transition: none;   /* no white flash */
+}
+
+/* ---------- Tables ---------- */
+.table-dark {
+    background-color: #000;
+    color: #00ff00;
+}
+th, td {
+    color: #00ff00 !important;
+    background-color: transparent !important;
+}
+
+/* ---------- Pagination ---------- */
+.pagination .page-link {
+    background-color: #000;
+    border-color: #00ff00;
+    color: #00ff00;
+}
+.pagination .active .page-link {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* ---------- Misc components ---------- */
+.badge {
+    font-size: 0.8em;
+}
+.clock {
+    font-family: 'Courier New', monospace;
+}
+.task-row:hover {
+    background-color: #0a0a0a;
+}
+
+/* ---------- Alerts ---------- */
+.alert, .alert-success, .alert-dark {
+    background-color: #0a0a0a !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+/* ---------- Text utilities ---------- */
+.text-muted {
+    color: #00ff00 !important;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand, .navbar-text, .navbar .nav-link {
+    color: #00ff00 !important;
+}
+
+/* ---------- Special cards (e.g., forms) ---------- */
+.card.bg-black {
+    background-color: #000 !important;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.1);
+}
+
+/* ---------- Heading style for form titles ---------- */
+.terminal-heading {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
